@@ -1,0 +1,34 @@
+{
+  "name": "Mark Rest Icon",
+  "version": "0.9",
+  "description": "kintoneでお休みの人を可視化する",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://bozuman.cybozu.com/*"],
+      "css": ["css/index.css"],
+      "js": ["js/index.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16x16_markRestIcon.png",
+      "32": "images/32x32_markRestIcon.png",
+      "48": "images/48x48_markRestIcon.png",
+      "128": "images/128x128_markRestIcon.png"
+    }
+  },
+  "icons": {
+    "16": "images/16x16_markRestIcon.png",
+    "32": "images/32x32_markRestIcon.png",
+    "48": "images/48x48_markRestIcon.png",
+    "128": "images/128x128_markRestIcon.png"
+  },
+  "manifest_version": 2
+}
