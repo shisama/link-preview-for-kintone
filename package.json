@@ -17,9 +17,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nkgrnkgr/markRestIcon-kintone-chrome-extention/issues"
+    "url": "https://github.com/nkgrnkgr/link-preview-for-kintone/issues"
   },
-  "homepage": "https://github.com/nkgrnkgr/markRestIcon-kintone-chrome-extention#readme",
+  "homepage": "https://github.com/nkgrnkgr/link-preview-for-kintone#readme",
   "devDependencies": {
     "@types/chrome": "0.0.95",
     "@types/node": "12.12.27",
@@ -34,6 +34,7 @@
     "webpack-cli": "3.3.11"
   },
   "dependencies": {
+    "@kintone/rest-api-client": "^0.3.0",
     "dotenv": "^8.2.0"
   },
   "husky": {

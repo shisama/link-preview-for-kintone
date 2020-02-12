@@ -1,12 +1,15 @@
 {
-  "name": "Mark Rest Icon",
-  "version": "0.9",
-  "description": "kintoneでお休みの人を可視化する",
+  "name": "Link Preview for kintone",
+  "version": "0.0.1",
+  "description": "kintoneでlinkのPreviewを表示する",
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": ["https://bozuman.cybozu.com/*"],
+      "matches": [
+        "https://bozuman.cybozu.com/k/*",
+        "https://ocean.cybozu-dev.com/k/*"
+      ],
       "css": ["css/index.css"],
       "js": ["js/index.js"]
     }
