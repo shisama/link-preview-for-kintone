@@ -1,1 +1,3 @@
-console.log("hello world");
+import mutateThreadComments from "./lib/mutateThreadComments";
+
+mutateThreadComments();
